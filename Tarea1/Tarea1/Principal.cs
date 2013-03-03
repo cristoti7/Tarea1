@@ -7,7 +7,8 @@ namespace Tarea1
 		public static void Main (string[] args)
 		{
 			Persona crissillo = new Persona();
-
+			crissillo.obtenerDatosDePersona ();
+			crissillo.mostrarDatosDePersona ();
 
 		}
 	}

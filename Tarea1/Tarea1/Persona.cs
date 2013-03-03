@@ -4,35 +4,50 @@ namespace Tarea1
 {
 	public class Persona
 	{
-		private string nombre;
-		private string telefono;
+		public string nombre;
+		private string numeroDeTelefono;
 		private string direccionDeFacebook; 
 		private string domicilio;
 		public Persona ()
 		{
-			Console.WriteLine (" Dame tu nombre ");
-			this.nombre = Console.ReadLine ();
-			Console.WriteLine (" Dame tu telefono ");
-			this.telefono = Console.ReadLine ();
-			Console.WriteLine (" Dame tu direccion de facebook ");
-			this.direccionDeFacebook = Console.ReadLine ();
-			Console.WriteLine (" Dame tu domicilio ");
-			this.domicilio = Console.ReadLine ();
-
-			Console.WriteLine ("");
-
-			Console.WriteLine (" ficha persona:");
-
-			Console.WriteLine (this.nombre);
-			Console.WriteLine (this.telefono);
-			Console.WriteLine (this.direccionDeFacebook);
-			Console.WriteLine (this.domicilio);
 		
+		
+		}
+		public void obtenerDatosDePersona(){
+
+			Console.WriteLine (" Welcome Please enter the following information:\n");
+			Console.WriteLine ("\n please give me your name:\n");
+			nombre = Console.ReadLine ();
+			Console.WriteLine ("\n Please give me your phone number:\n");
+			numeroDeTelefono = Console.ReadLine ();
+			Console.WriteLine ("\n Please give me your address facebook :\n");
+			direccionDeFacebook = Console.ReadLine ();
+			Console.WriteLine ("\n Please give me your address:\n");
+			domicilio = Console.ReadLine ();
+
+
+		}
+		public void mostrarDatosDePersona(){
+			Console.WriteLine (" ficha persona:");
+			Console.WriteLine (" \n\n");
+			Console.WriteLine (" your name is: \n ");
+			Console.WriteLine (nombre);
+			Console.WriteLine ("\n your phone number is: \n ");
+			Console.WriteLine (numeroDeTelefono);
+			Console.WriteLine ("\n your address facebook is: \n");
+			Console.WriteLine (direccionDeFacebook);
+			Console.WriteLine ("\n your address is: \n");
+			Console.WriteLine (domicilio);
+			Console.WriteLine (" \n\n");
 		}
 
 
 
 
+
+
+	}
+}
 
 
 
